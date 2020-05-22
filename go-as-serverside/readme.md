@@ -18,15 +18,15 @@ protoc --proto_path=./proto --go_out=plugins=grpc:. ./proto/user.proto | python 
 
 ### Run
 
-Server side:
+- Server side:
 
-`go run server/main.go`
+  `go run server/main.go`
 
-Client side:
+- Client side:
 
-Go | Python | Ruby
---- | --- | ---
-go run client/golang/client.go | python client/python/client.py | ruby client/ruby/client.rb
+  Go | Python | Ruby
+  --- | --- | ---
+  go run client/golang/client.go | python client/python/client.py | ruby client/ruby/client.rb
 
 ### Tutorial
 
