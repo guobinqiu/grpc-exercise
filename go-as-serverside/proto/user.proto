@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "./pb_golang";
+
+service User {
+    rpc GetUserInfo (UserRequest) returns (UserResponse);
+}
+
+message UserRequest {
+    string name = 1;
+}
+
+message UserResponse {
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
+    repeated string title = 4;
+}
