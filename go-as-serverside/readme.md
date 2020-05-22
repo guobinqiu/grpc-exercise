@@ -8,7 +8,7 @@ Golang as server side, other programming languages as client side.
 Components/Languages | Go | Python | Ruby 
 --- | --- | --- | ---
 gRPC | go get google.golang.org/grpc | python -m pip install grpcio | gem install grpc
-gRPC tool | <table><tr><td>Protobuf Compiler</td><td> Protobuf Compiler Plugin</td></tr><tr><td>go get github.com/golang/protobuf/protoc-gen-go</td><td><table><td>mac</td><td>centos</td><td>ubantu</td></tr><tr><td>brew install protobuf</td><td>yum install -y protobuf-compiler</td><td>apt install -y protobuf-compiler</td></table></td></tr></table> | python -m pip install grpcio-tools | gem install grpc-tools
+gRPC tool | <table><tr><td>Protobuf Compiler</td><td> Protobuf Compiler Plugin</td></tr><tr><td>go get github.com/golang/protobuf/protoc-gen-go</td><td><table><td>mac</td><td>centos</td><td>ubntu</td></tr><tr><td>brew install protobuf</td><td>yum install -y protobuf-compiler</td><td>apt install -y protobuf-compiler</td></table></td></tr></table> | python -m pip install grpcio-tools | gem install grpc-tools
 
 ### Generate Stub
 
