@@ -1,4 +1,4 @@
-Practice gRPC
+Golang as server side
 ---
 
 Golang as server side, other programming languages as client side.
