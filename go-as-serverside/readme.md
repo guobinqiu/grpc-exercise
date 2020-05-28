@@ -28,6 +28,3 @@ protoc --proto_path=./proto --go_out=plugins=grpc:. ./proto/user.proto | python 
   --- | --- | ---
   go run client/golang/client.go | python client/python/client.py | ruby client/ruby/client.rb
 
-### Tutorial
-
-> https://grpc.io/docs/tutorials/
