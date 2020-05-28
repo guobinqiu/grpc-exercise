@@ -12,7 +12,7 @@ producer和consumer两个进程间的通信需要建立在一个点对点的tcp�
 
 ### Examples
 
-- [golang as serverside](go-as-serverside/readme.md)
+- [go as serverside](go-as-serverside/readme.md)
 
 ### Tutorial
 

@@ -1,7 +1,7 @@
-Golang as server side
+Go as server side
 ---
 
-Golang as server side, other programming languages as client side.
+Go as server side, other programming languages as client side.
 
 ### Install
 
