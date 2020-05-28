@@ -10,7 +10,7 @@ producer和consumer两个进程间的通信需要建立在一个点对点的tcp�
 
 使用rpc需要注意的是由于消费端的代码是同步执行的，需要等待服务端返回才能继续往下走，所以服务端的性能直接制约着客户端性能，所以对于耗时长的操作请使用异步的，基于消息队列的架构来处理。
 
-### Example
+### Examples
 
 - [golang as serverside](go-as-serverside/readme.md)
 
