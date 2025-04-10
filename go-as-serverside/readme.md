@@ -3,18 +3,37 @@ Go as server side
 
 Go as server side, other programming languages as client side.
 
-### Install
+### Protobuf Compiler (Interface)
 
-Components/Languages | Go | Python | Ruby 
---- | --- | --- | ---
-gRPC | go get google.golang.org/grpc | python -m pip install grpcio | gem install grpc
-gRPC tool | <table><tr><td>Protobuf Compiler</td><td> Protobuf Compiler Plugin</td></tr><tr><td>go get github.com/golang/protobuf/protoc-gen-go</td><td><table><td>mac</td><td>centos</td><td>ubuntu</td></tr><tr><td>brew install protobuf</td><td>yum install -y protobuf-compiler</td><td>apt install -y protobuf-compiler</td></table></td></tr></table> | python -m pip install grpcio-tools | gem install grpc-tools
+| OS | Command                          |
+|----------|-----------------------------------|
+| macOS    | `brew install protobuf`           |
+| CentOS   | `yum install -y protobuf-compiler` |
+| Ubuntu   | `apt install -y protobuf-compiler` |
 
-### Generate Stub
+### Protobuf Compiler Plugin (Implementation of Interface)
 
-Go | Python | Ruby
---- | --- | ---
-protoc --proto_path=./proto --go_out=plugins=grpc:. ./proto/user.proto | python -m grpc_tools.protoc --proto_path=./proto --python_out=./pb_python --grpc_python_out=./pb_python ./proto/user.proto | grpc_tools_ruby_protoc --proto_path=./proto --ruby_out=./pb_ruby --grpc_out=./pb_ruby ./proto/user.proto
+| Lang | Command |
+|---|---|
+| Go | `go get github.com/golang/protobuf/protoc-gen-go` |
+| Python | `python -m pip install grpcio-tools` |
+|	Ruby | `gem install grpc-tools` |
+
+### SDK 
+
+| Lang | Command |
+|---|---|
+| Go | `go get google.golang.org/grpc` |
+| Python | `python -m pip install grpcio` |
+|	Ruby | `gem install grpc` |
+
+### Generate Code
+
+| Lang | Command |
+|---|---|
+| Go | `protoc --proto_path=./proto --go_out=plugins=grpc:. ./proto/user.proto` |
+| Python | `python -m grpc_tools.protoc --proto_path=./proto --python_out=./pb_python --grpc_python_out=./pb_python ./proto/user.proto` |
+|	Ruby | `grpc_tools_ruby_protoc --proto_path=./proto --ruby_out=./pb_ruby --grpc_out=./pb_ruby ./proto/user.proto` |
 
 ### Run
 
