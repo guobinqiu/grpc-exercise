@@ -43,7 +43,8 @@ Go as server side, other programming languages as client side.
 
 - Client side:
 
-  Go | Python | Ruby
-  --- | --- | ---
-  go run client/golang/client.go | python client/python/client.py | ruby client/ruby/client.rb
-
+| Lang | Command |
+|---|---|
+| Go | `go run client/golang/client.go` |
+| Python | `python client/python/client.py` |
+|	Ruby | `ruby client/ruby/client.rb` |
