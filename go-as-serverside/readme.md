@@ -19,6 +19,14 @@ Go as server side, other programming languages as client side.
 | Python | `python -m pip install grpcio-tools` |
 |	Ruby | `gem install grpc-tools` |
 
+### Code Generator
+
+| Lang | Command |
+|---|---|
+| Go | `protoc --proto_path=./proto --go_out=plugins=grpc:. ./proto/user.proto` |
+| Python | `python -m grpc_tools.protoc --proto_path=./proto --python_out=./pb_python --grpc_python_out=./pb_python ./proto/user.proto` |
+|	Ruby | `grpc_tools_ruby_protoc --proto_path=./proto --ruby_out=./pb_ruby --grpc_out=./pb_ruby ./proto/user.proto` |
+
 ### SDK 
 
 | Lang | Command |
@@ -26,14 +34,6 @@ Go as server side, other programming languages as client side.
 | Go | `go get google.golang.org/grpc` |
 | Python | `python -m pip install grpcio` |
 |	Ruby | `gem install grpc` |
-
-### Generate Code
-
-| Lang | Command |
-|---|---|
-| Go | `protoc --proto_path=./proto --go_out=plugins=grpc:. ./proto/user.proto` |
-| Python | `python -m grpc_tools.protoc --proto_path=./proto --python_out=./pb_python --grpc_python_out=./pb_python ./proto/user.proto` |
-|	Ruby | `grpc_tools_ruby_protoc --proto_path=./proto --ruby_out=./pb_ruby --grpc_out=./pb_ruby ./proto/user.proto` |
 
 ### Run
 
