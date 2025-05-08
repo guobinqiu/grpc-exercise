@@ -15,7 +15,7 @@ Go as server side, other programming languages as client side.
 
 | Lang | Command |
 |---|---|
-| Go | `go get github.com/golang/protobuf/protoc-gen-go` |
+| Go | `go install google.golang.org/protobuf/cmd/protoc-gen-go` 和 `go install google.golang.org/grpc/cmd/protoc-gen-go-grpc` |
 | Python | `python -m pip install grpcio-tools` |
 |	Ruby | `gem install grpc-tools` |
 
