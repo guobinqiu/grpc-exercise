@@ -22,7 +22,7 @@ A high-performance, open-source universal RPC framework
 
 - [go as serverside](go-as-serverside/readme.md)
 
-- [gRPC的4种模式] https://github.com/guobinqiu/grpc-f4
+- [gRPC的4种模式](https://github.com/guobinqiu/grpc-f4)
 
 ### Tutorial
 
